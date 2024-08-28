@@ -1,6 +1,7 @@
 import React from 'react'
 import landing from "../assets/LandingCollage.jpg"
 import album from "../assets/AlbumCover.jpeg"
+import single from "../assets/Single.jpg"
 import { FaSpotify } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
@@ -11,14 +12,14 @@ const Home = () => {
   return (
     <div className=' w-full bg-black '>
         <div className=' flex justify-between items-center bg-[#244709] rounded-md'>
-            <div className=' pl-10'>
-                <div className=' font-rhinegold text-[80px] text-[#ead151] md:text-[65px]'>OBSA</div>
+            <div className=' md:pl-10 w-full'>
+                <div className=' font-rhinegold text-[80px] text-[#ead151] md:text-[65px] text-center md:text-left'>OBSA</div>
             </div>
 
             <ul className=' md:flex lg:text-[30px] lg:gap-5 md:gap-4 md:text-[#ead151] lg:pr-10 md:pr-7 md:font-Poppins md:font-semibold hidden '>
                 <li className='hover:bg-[#0f47af] hover:px-2 hover:rounded-lg'> <a href="#about">About</a></li>
                 <li className='hover:bg-[#0f47af] hover:px-2 hover:rounded-lg'> <a href="#discography">Discograpgy</a></li>
-                <li> <a href="#contact"> <button className=' hover:bg-[#0f47af] hover:px-2 hover:rounded-lg'>Contact Me</button></a></li>
+                <li> <a href="#contact"> <button className=' hover:bg-[#0f47af] hover:px-2 hover:rounded-lg'>Contact</button></a></li>
             </ul>
         </div>
 
@@ -46,24 +47,31 @@ const Home = () => {
                  adding their blend for a promising future that the world will witness.</p>
         </div>
 
-        <div className='bg-discography bg-cover xl:bg-center bg-no-repeat h-[900px] mx-2 my-2 rounded-md font-Poppins relative'>
+        <div className=' flex flex-col bg-discography bg-cover xl:bg-center bg-no-repeat h-[900px] mx-2 my-2 rounded-md font-Poppins relative px-4'>
             <h2 id='discography' className=' lg:text-[60px] text-[30px] font-bold lg:pl-6 md:pl-2 text-[#ead151] md:text-left text-center py-4 '>DISCOGRAPGHY</h2>
             <p className=' lg:text-[23px] text-[#ead151] font-medium lg:pl-6 md:pl-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a eaque tempore autem, mollitia placeat? Qui <br /> expedita asperiores illo odio, perspiciatis soluta natus quidem libero, fugiat obcaecati explicabo. Et, laborum?</p>
-            <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[350px] xl:h-[350px] lg:w-[300px] lg:h-[300px] w-[230px] :h-[230px] absolute xl:top-[350px] xl:right-[500px] lg:top-[350px] lg:right-[300px] md:top-[30%] md:right-[30%] top-[35%] right-[12%] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={album} alt="African Soul" /></a>
-            <div className=' absolute flex md:flex-col gap-6 xl:top-[470px] xl:right-[150px] lg:top-[430px] lg:right-[90px] md:top-[60%] md:right-[8%] top-[64%] right-[20%]'>
-                <a href="https://open.spotify.com/artist/6s1FUBYvRPz3U52Uc0ehzJ?si=w7mIN0UARrG65iztxLRnPQ" target='_blank'><FaSpotify className=' md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-[#ead151] rounded-[50%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
-                <a href="https://www.youtube.com/@obsaeikeland9371/featured" target='_blank' ><FaYoutubeSquare className=' md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-[#ead151] rounded-[20%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
+            <div className=' flex justify-center items-center pt-14 lg:gap-12 md:gap-6 gap-4 md:absolute xl:top-[350px] xl:right-[450px] lg:top-[350px] lg:right-[230px] md:top-[25%] md:right-[15%] top-[35%] right-[12%]'>
+            <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] w-[230px] :h-[230px] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={album} alt="African Soul" /></a>
+            <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] w-[230px] :h-[230px] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={single} alt="IF She Only Knew" /></a>
+            </div>
+            {/* <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[350px] xl:h-[350px] lg:w-[300px] lg:h-[300px] w-[230px] :h-[230px] absolute xl:top-[350px] xl:right-[500px] lg:top-[350px] lg:right-[300px] md:top-[30%] md:right-[30%] top-[35%] right-[12%] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={album} alt="African Soul" /></a> */}
+            <div className=' absolute flex md:flex-col gap-6 xl:gap-10 xl:top-[440px] xl:right-[150px] lg:top-[430px] lg:right-[90px] md:top-[60%] md:right-[8%] top-[64%] right-[20%]'>
+                <a href="https://open.spotify.com/artist/6s1FUBYvRPz3U52Uc0ehzJ?si=w7mIN0UARrG65iztxLRnPQ" target='_blank'><FaSpotify className=' xl:w-[100px] xl:h-[100px] md:w-[70px] md:h-[70px] w-[80px] h-[80px] bg-[#ead151] rounded-[50%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
+                <a href="https://www.youtube.com/@obsaeikeland9371/featured" target='_blank' ><FaYoutubeSquare className=' xl:w-[100px] xl:h-[100px] md:w-[70px] md:h-[70px] w-[80px] h-[80px] bg-[#ead151] rounded-[20%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
             </div>
         </div>
 
         <div id='contact' className=' flex justify-end font-Poppins bg-fin-notes bg-cover md:bg-center bg-no-repeat lg:h-[700px] md:h-[500px] h-[500px] mx-2 my-2 rounded-md'>
-            <div className='xl:w-[42%] lg:w-[40%] md:w-[40%] md:px-0 px-2'>
-                <p className=' text-[#ead151] pb-[100px] md:pb-[50px] pt-[20px] lg:text-[23px] md:text-[20px]'>With infinite possibillities ahead, <span className=' font-semibold'>Obsa</span> continues to captivate 
-                audiences and make his mark in the world of music. Keep and
-                 eye out for this rising star as he takes his artistic journey to even greater heights.</p>
+            <div className='xl:w-[42%] lg:w-[40%] md:w-[40%] md:px-0 px-2 flex flex-col-reverse md:flex-col'>
+                <p className='text-[#ead151] pb-[130px] md:pb-[0px] pt-[20px] lg:text-[23px] md:text-[20px]'>With infinite possibillities ahead, <span className=' font-semibold'>Obsa</span> continues to captivate 
+                audiences and make his mark in the world <span className='text-red-600 font-bold md:hidden'>of music. Keep </span> and
+                 eye out for this <span className='text-green-600 font-bold md:hidden'>rising star </span> as he takes his artistic journey to even greater heights.</p>
                  
-                 <h3 className='text-[#ead151] md:text-[23px] font-semibold underline underline-offset-8 pb-12 '>Contact</h3>
-                 <a href="https://www.instagram.com/obsasabbona?igsh=Ym15ZHU4dXFuZDl6&utm_source=qr" target='_blank' ><FaInstagram className=' md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-[#ead151] rounded-[20%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
+                 <div className=' pb-5 md:pb-0'>
+                 <h3 className='text-[#ead151] xl:text-[30px] md:text-[23px] font-semibold underline underline-offset-8 pb-12 lg:pt-[50px] md:pt-[20px]'>Contact</h3>
+                 <a href="https://www.instagram.com/obsasabbona?igsh=Ym15ZHU4dXFuZDl6&utm_source=qr" target='_blank' ><FaInstagram className=' xl:w-[120px] xl:h-[120px] md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-[#ead151] rounded-[20%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
+                 </div>
+                 
             </div>
         </div>
 
