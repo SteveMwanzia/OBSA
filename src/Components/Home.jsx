@@ -5,6 +5,7 @@ import single from "../assets/Single.jpg"
 import { FaSpotify } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
 
 
 
@@ -59,6 +60,10 @@ const Home = () => {
                 <a href="https://open.spotify.com/artist/6s1FUBYvRPz3U52Uc0ehzJ?si=w7mIN0UARrG65iztxLRnPQ" target='_blank'><FaSpotify className=' xl:w-[100px] xl:h-[100px] md:w-[70px] md:h-[70px] w-[80px] h-[80px] bg-[#ead151] rounded-[50%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
                 <a href="https://www.youtube.com/@obsaeikeland9371/featured" target='_blank' ><FaYoutubeSquare className=' xl:w-[100px] xl:h-[100px] md:w-[70px] md:h-[70px] w-[80px] h-[80px] bg-[#ead151] rounded-[20%] hover:border-4 hover:border-solid hover:border-[#0f47af]' /></a>
             </div>
+        </div>
+
+        <div className=' h-[150px] bg-[#244709] flex justify-center items-center font-Poppins mx-2 my-2 rounded-md'>
+            <button className=' flex items-center justify-center gap-3 bg-[#ead151] text-center text-[#e20001] w-[45%] h-[40%] md:h-[45%]md:w-[28%] lg:w-[20%] xl:w-[15%] text-[28px] pt-3 pb-3  rounded-md hover:cursor-pointer hover:bg-[#0f47af] hover:text-white font-semibold'><a href="https://www.ebay.com/" target='_blank'><FaCartShopping className=' h-8' /></a><a href="https://www.ebay.com/" target='_blank'><p>Merch</p></a></button>
         </div>
 
         <div id='contact' className=' flex justify-end font-Poppins bg-fin-notes bg-cover md:bg-center bg-no-repeat lg:h-[700px] md:h-[500px] h-[500px] mx-2 my-2 rounded-md'>
