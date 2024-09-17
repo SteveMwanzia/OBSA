@@ -2,7 +2,7 @@ import React from 'react'
 import landing from "../assets/LandingCollage.jpg"
 import album from "../assets/AlbumCover.jpeg"
 import single from "../assets/Single.jpg"
-import career from "../assets/career.png"
+import career from "../assets/Career.png"
 import { FaSpotify } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
