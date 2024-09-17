@@ -2,14 +2,26 @@ import React from 'react'
 import landing from "../assets/LandingCollage.jpg"
 import album from "../assets/AlbumCover.jpeg"
 import single from "../assets/Single.jpg"
+import career from "../assets/career.png"
 import { FaSpotify } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
+import data from "../Data.json"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
 const Home = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      };
   return (
     <div className=' w-full bg-black '>
         <div className=' flex justify-between items-center bg-[#244709] rounded-md'>
@@ -62,15 +74,53 @@ const Home = () => {
             </div>
         </div>
 
+        <div className=' flex flex-col h-[1100px] md:h-[700px] mx-2 my-2 rounded-md font-Poppins bg-green-950'>
+            <div className='h-[100px]'>
+                <h2 className='lg:text-[60px] text-[30px] font-bold lg:pl-6 md:pl-2 text-[#ead151] md:text-left text-center md:pt-6 lg:pt-0 '>CAREEER HIGHLIGHTS</h2>
+            </div>
+
+           <div className=' flex  md:flex-row flex-col h-[1000px] gap-11 md:gap-4 md:h-[600px]'>
+                <div className='md:w-1/2 bg-[#ead151] md:h-full h-[450px] rounded-xl flex flex-col md:gap-4 gap-3 items-center justify-start md:pt-6 pt-5 pb-6'>
+                    <img className=' md:h-[400px] md:w-[300px] h-[250px] w-[250px] rounded-lg' src={career} alt="Vybz Studio interview" />
+                    <p className=' mx-4 text-[14px] md:text-[16px] text-[#e20001]'>
+                    A great and dynamic performer, Obsa has graced numerous stages and events including Alliance Francaise, Geco cafe, Waks tikitaka( Citizen Radio ), 
+                    Vybez Radio, Tuliza FM, Kameme TV, The Rave TV, Inna Yard TV, One Love TV and TV 47.
+                    </p>
+                </div>
+
+                <div className=' md:w-1/2 bg-[#e20001] md:h-full h-1/2  overflow-hidden rounded-xl'>
+                    <div className="mt-4 md:mt-8 lg:mt-5 xl:mt-12 px-10 md:px-8">
+                        <Slider {...settings}>
+                            {data.map((data) => (
+                                <div key={data.id} className='bg-white h-[450px] overflow-auto  md:h-[540px] lg:h-[560px] xl:h-[500px] md:w-[100px] w-[250px] md:px-6 px-2  text-black rounded-xl mx-auto pb-2'>
+                                    <div className=' rounded-xl flex justify-center items-center'>
+                                        <img className=' h-[200px] w-[200px] py-5' src={data.img} alt={data.name} />
+                                    </div>
+
+                                    <div className='text-[12px] md:text-[16px] xl:text-[18px] flex flex-col gap-2 lg:gap-1'>
+                                        <p className=' text-[18px] md:text-[22px] lg:text-[24px] font-semibold'>{data.name}</p>
+                                        <p>{data.review}</p>
+                                    </div>
+                                </div> 
+                            ))}
+                        </Slider>
+                </div>
+
+
+                </div>
+           </div>
+
+        </div>
+
         <div className=' h-[150px] bg-[#244709] flex justify-center items-center font-Poppins mx-2 my-2 rounded-md'>
-            <button className=' flex items-center justify-center gap-3 bg-[#ead151] text-center text-[#e20001] w-[45%] h-[40%] md:h-[45%]md:w-[28%] lg:w-[20%] xl:w-[15%] text-[28px] pt-3 pb-3  rounded-md hover:cursor-pointer hover:bg-[#0f47af] hover:text-white font-semibold'><a href="https://www.ebay.com/" target='_blank'><FaCartShopping className=' h-8' /></a><a href="https://www.ebay.com/" target='_blank'><p>Merch</p></a></button>
+            <button className=' flex items-center justify-center gap-3 bg-[#ead151] text-center text-[#e20001] w-[45%] h-[40%] md:h-[45%] md:w-[28%] lg:w-[20%] xl:w-[15%] text-[28px] pt-3 pb-3  rounded-md hover:cursor-pointer hover:bg-[#0f47af] hover:text-white font-semibold'><a href="https://www.ebay.com/" target='_blank'><FaCartShopping className=' h-8' /></a><a href="https://www.ebay.com/" target='_blank'><p>Merch</p></a></button>
         </div>
 
         <div id='contact' className=' flex justify-end font-Poppins bg-fin-notes bg-cover md:bg-center bg-no-repeat lg:h-[700px] md:h-[500px] h-[500px] mx-2 my-2 rounded-md'>
             <div className='xl:w-[42%] lg:w-[40%] md:w-[40%] md:px-0 px-2 flex flex-col-reverse md:flex-col'>
                 <p className='text-[#ead151] pb-[130px] md:pb-[0px] pt-[20px] lg:text-[23px] md:text-[20px]'>With infinite possibillities ahead, <span className=' font-semibold'>Obsa</span> continues to captivate 
-                audiences and make his mark in the world <span className='text-red-600 font-bold md:hidden'>of music. Keep </span> and
-                 eye out for this <span className='text-green-600 font-bold md:hidden'>rising star </span> as he takes his artistic journey to even greater heights.</p>
+                audiences and make his mark in the world <span className='bg-red-600 font-bold md:hidden'>of music. Keep </span> and
+                 eye out for this <span className='bg-green-600 font-bold md:hidden'>rising star as he takes </span>  his artistic journey to even greater heights.</p>
                  
                  <div className=' pb-5 md:pb-0'>
                  <h3 className='text-[#ead151] xl:text-[30px] md:text-[23px] font-semibold underline underline-offset-8 pb-12 lg:pt-[50px] md:pt-[20px]'>Contact</h3>
@@ -89,5 +139,6 @@ const Home = () => {
     </div>
   )
 }
+
 
 export default Home

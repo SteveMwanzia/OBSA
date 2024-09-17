@@ -1,0 +1,62 @@
+[
+    {
+        "id":"1",
+        "name":"Alliance",
+        "img":"Alliance.jpg" ,
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"2",
+        "name":"Citizen",
+        "img":"Citizen.png",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"3",
+        "name":"Geco",
+        "img":"Geco.jpg",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"4",
+        "name":"Kameme",
+        "img":"Kameme.png",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"5",
+        "name":"Onelove",
+        "img":"Onelove.png" ,
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"6",
+        "name":"Rave",
+        "img":"Rave.jpg",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"7",
+        "name":"Tuliza",
+        "img":"Tuliza.png",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"8",
+        "name":"Vybz",
+        "img":"Vybz.jpg" ,
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"9",
+        "name":"Wakstikitaka",
+        "img":"Wakstikitaka.jpg",
+        "review": "Obsa has now visited Kenya Twice. It was an absolute pleasure hosting him both times on our Reggae Show Wakstikitaka on Radio Citizen. What stood out for me about him is Background. His personal life story and he was able to share that with us on Air. Most Artists will not want to share that, they only want to share the Glamour.He's down to earth and a really good Artist. He knows how to connect with his audience and is full of good Vibes."
+    },
+    {
+        "id":"10",
+        "name":"Tv47",
+        "img":"Tv47.jpg",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    }
+]

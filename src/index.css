@@ -9,6 +9,9 @@
 	src: local("RhinegoldVol1-Regular"),
 	url('./assets/Fonts/RhinegoldVol1-Regular.ttf') format("truetype");
 }
+.slick-slide > div {
+	margin: 0 10px;
+}
 
 *,html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
