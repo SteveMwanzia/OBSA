@@ -58,5 +58,11 @@
         "name":"Tv47",
         "img":"Tv47.jpg",
         "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
+    },
+    {
+        "id":"11",
+        "name":"Inna Yard Reggea Hosted on Y254",
+        "img":"Y254.jpg",
+        "review": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sequi similique maiores, pariatur iure cum harum porro explicabo totam cupiditate expedita placeat! Unde reiciendis accusantium porro at necessitatibus recusandae temporibus!"
     }
 ]

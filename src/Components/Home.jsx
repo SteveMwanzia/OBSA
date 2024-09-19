@@ -61,8 +61,13 @@ const Home = () => {
         </div>
 
         <div className=' flex flex-col bg-discography bg-cover xl:bg-center bg-no-repeat h-[900px] mx-2 my-2 rounded-md font-Poppins relative px-4'>
-            <h2 id='discography' className=' lg:text-[60px] text-[30px] font-bold lg:pl-6 md:pl-2 text-[#ead151] md:text-left text-center py-4 '>DISCOGRAPGHY</h2>
-            <p className=' lg:text-[23px] text-[#ead151] font-medium lg:pl-6 md:pl-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a eaque tempore autem, mollitia placeat? Qui <br /> expedita asperiores illo odio, perspiciatis soluta natus quidem libero, fugiat obcaecati explicabo. Et, laborum?</p>
+            <h2 id='discography' className=' lg:text-[60px] text-[30px] font-bold lg:pl-6 md:pl-2 text-[#ead151] md:text-left text-center md:py-4 pt-4 md:pt-0'>DISCOGRAPGHY</h2>
+            <p className=' lg:text-[23px] text-[#ead151] font-medium lg:pl-6 md:pl-2'>Obsa's sound is a captivating blend of genres, His growing discography 
+                includes his debut single 'If She <br className=' hidden md:flex' />  Only Knew ' which was followed with the reggea album 'African Soul'. <br /><br />
+                With stirring lyrics,powerful vocalization, and new-age infuences, Obsa proves
+                to be an artist pushing <br className=' hidden md:flex' />  bounderies and carving his niche within
+                the world of reggea music.
+            </p>
             <div className=' flex justify-center items-center pt-14 lg:gap-12 md:gap-6 gap-4 md:absolute xl:top-[350px] xl:right-[450px] lg:top-[350px] lg:right-[230px] md:top-[25%] md:right-[15%] top-[35%] right-[12%]'>
             <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] w-[230px] :h-[230px] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={album} alt="African Soul" /></a>
             <a href="https://orcd.co/ypnpkwn" target='_blank'><img className=' xl:w-[300px] xl:h-[300px] lg:w-[250px] lg:h-[250px] w-[230px] :h-[230px] hover:border-4 hover:border-solid hover:border-[#0f47af] cursor-pointer' src={single} alt="IF She Only Knew" /></a>
@@ -89,7 +94,7 @@ const Home = () => {
                 </div>
 
                 <div className=' md:w-1/2 bg-[#e20001] md:h-full h-1/2  overflow-hidden rounded-xl'>
-                    <div className="mt-4 md:mt-8 lg:mt-5 xl:mt-12 px-10 md:px-8">
+                    <div className="mt-4 md:mt-8 lg:mt-5 xl:mt-12 px-7 md:px-8">
                         <Slider {...settings}>
                             {data.map((data) => (
                                 <div key={data.id} className='bg-white h-[450px] overflow-auto  md:h-[540px] lg:h-[560px] xl:h-[500px] md:w-[100px] w-[250px] md:px-6 px-2  text-black rounded-xl mx-auto pb-2'>
